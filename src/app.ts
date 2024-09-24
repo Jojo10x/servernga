@@ -4,7 +4,7 @@ import weatherRoutes from './routes/weatherRoutes';
 
 const app = express();
 
-app.use(cors({ origin: 'http://localhost:5174' })); 
+app.use(cors({ origin: ['http://localhost:5174','https://weathernga.onrender.com/'] })); 
 app.use(express.json());
 
 app.use('/api/weather', weatherRoutes);
